@@ -1,0 +1,241 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import ESSJournal2026 from "../assets/ESS-journal-2026.jpg";
+---
+
+<Layout title="Publications | ECWA Society for Scholars">
+  <Header />
+  <div class="plus-jakarta-sans-normal">
+    <div class="bg-[#faf5ee] py-5 lg:py-10">
+      <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div class="text-xs space-x-2">
+          <a href="/" class="text-[#06005A] hover:opacity-60">
+            Home
+          </a>
+          <span>/</span>
+          <span class="text-black">Publications</span>
+        </div>
+        <h2 class="font-bold text-xl lg:text-3xl mt-2 libre-baskerville-bold">
+          ESS Publications
+        </h2>
+      </div>
+    </div>
+
+    <section>
+      <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div class="text-lg py-10 lg:py-20 text-slate-600 lg:w-8/12">
+          <h2 class="font-bold">Research · Writing · Ideas</h2>
+          <div>
+            Advancing thoughtful scholarship in service of the Church, higher
+            education, and the wider society.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journal introduction -->
+    <section class="">
+      <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div class="py-10 lg:py-20 border-y border-cyan-600 grid gap-12 lg:grid-cols-[1fr_0.85fr] lg:items-center">
+          <div>
+            <p class="text-base lg:text-lg font-bold tracking-wider text-[#06005A]">
+              Our scholarly platform
+            </p>
+            <h2 class="mt-3 text-xl lg:text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+              ECWA Scholars Journal
+            </h2>
+            <p class="lg:mt-6 text-base lg:text-lg leading-8 text-slate-600">
+              Publications are central to the mission of the ECWA Society for
+              Scholars. Through research, seminars, conferences, and scholarly
+              writing, ESS seeks to generate ideas and knowledge that serve the
+              Church, institutions of higher learning, and the wider society.
+            </p>
+            <p class="mt-4 leading-7 text-slate-600">
+              The Society is committed to establishing and promoting The ECWA
+              Scholars Journal as a platform for scholarly engagement, research
+              dissemination, and intellectual contribution to ECWA’s global
+              ministry.
+            </p>
+          </div>
+
+          <div>
+            <div>
+              <Image
+                src={ESSJournal2026}
+                alt="Cover pages of the ESS Journal - Maiden Edition"
+                class="h-full w-full object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:grayscale-0"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What we publish -->
+    <section class="bg-white py-10 lg:py-20">
+      <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div class="max-w-2xl">
+          <p class="text-base lg:text-lg font-bold tracking-wider text-[#06005A]">
+            Areas of interest
+          </p>
+          <h2 class="mt-3 text-xl lg:text-3xl font-bold tracking-tight text-slate-900">
+            What We Publish
+          </h2>
+          <p class="mt-4 leading-7 text-slate-600">
+            ESS welcomes scholarly work that addresses issues relevant to the
+            Church, academia, and society.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="border-4 border-cyan-800 p-5 shadow-lg">
+            <span class="text-sm font-semibold text-cyan-700">01.</span>
+            <h3 class="mt-3 font-semibold text-slate-900">
+              Theology &amp; ministry
+            </h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">
+              Theology, biblical studies, and Christian ministry.
+            </p>
+          </div>
+
+          <div class="border-4 border-cyan-800 p-5 shadow-lg">
+            <span class="text-sm font-semibold text-cyan-700">02.</span>
+            <h3 class="mt-3 font-semibold text-slate-900">Education</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">
+              Education and curriculum development.
+            </p>
+          </div>
+
+          <div class="border-4 border-cyan-800 p-5 shadow-lg">
+            <span class="text-sm font-semibold text-cyan-700">03.</span>
+            <h3 class="mt-3 font-semibold text-slate-900">
+              Science &amp; innovation
+            </h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">
+              Science, technology, and innovation.
+            </p>
+          </div>
+
+          <div class="border-4 border-cyan-800 p-5 shadow-lg">
+            <span class="text-sm font-semibold text-cyan-700">04.</span>
+            <h3 class="mt-3 font-semibold text-slate-900">
+              Philosophy &amp; ethics
+            </h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">
+              Philosophical inquiry and ethical questions.
+            </p>
+          </div>
+
+          <div class="border-4 border-cyan-800 p-5 shadow-lg">
+            <span class="text-sm font-semibold text-cyan-700">05.</span>
+            <h3 class="mt-3 font-semibold text-slate-900">
+              Society &amp; public life
+            </h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">
+              Social, political, economic, and moral issues.
+            </p>
+          </div>
+
+          <div class="border-4 border-cyan-800 p-5 shadow-lg">
+            <span class="text-sm font-semibold text-cyan-700">06.</span>
+            <h3 class="mt-3 font-semibold text-slate-900">Applied research</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">
+              Research with practical relevance to communities and institutions
+              of higher learning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contribution and contact -->
+    <section class="py-10 lg:py-20">
+      <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <div class="relative isolate overflow-hidden rounded-lg border border-white/15 bg-[#06005A] p-5 sm:p-8">
+            <!-- Subtle crosshatch -->
+            <div
+              aria-hidden="true"
+              class="pointer-events-none absolute inset-0 opacity-20"
+              style="background-image:
+              repeating-linear-gradient(45deg, transparent 0 25px, rgba(255,255,255,.288) 25px 26px),
+              repeating-linear-gradient(-45deg, transparent 0 38px, rgba(255,255,255,.288) 38px 39px);"
+            ></div>
+            <p class="text-base lg:text-lg font-bold tracking-wider text-cyan-300">
+              Share your work
+            </p>
+            <h2 class="mt-3 text-xl lg:text-3xl font-bold text-white">
+              Contribute Your Research
+            </h2>
+            <p class="mt-5 leading-7 text-slate-300">
+              ESS invites scholars, researchers, and professionals to contribute
+              articles, research papers, conference proceedings, and other
+              scholarly materials.
+            </p>
+            <p class="mt-4 leading-7 text-slate-300">
+              Contributions should reflect the Society’s commitment to truth,
+              integrity, Christ-likeness, and scholarly excellence.
+            </p>
+            <a
+              href="mailto:ecwascholarsconference@gmail.com"
+              class="mt-7 inline-flex items-center rounded-md bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
+            >
+              Enquire about submissions
+              <span aria-hidden="true" class="ml-2">
+                →
+              </span>
+            </a>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:p-10">
+            <p class="text-base lg:text-lg font-bold tracking-wider text-[#06005A]">
+              Get in touch
+            </p>
+            <h2 class="mt-3 text-xl lg:text-2xl font-bold text-slate-900">
+              Contact for Publications
+            </h2>
+            <p class="mt-3 leading-7 text-slate-600">
+              For enquiries about publications, the ECWA Scholars Journal, or
+              submission opportunities, please contact:
+            </p>
+
+            <address class="mt-6 space-y-3 not-italic text-sm leading-6 text-slate-600">
+              <p class="font-semibold text-slate-900">
+                ECWA Society for Scholars (ESS)
+              </p>
+              <p>
+                C/o ECWA Headquarters, Jos
+                <br />
+                P.O. Box 63, Jos, Plateau State, Nigeria
+              </p>
+              <p>
+                <span class="font-medium text-slate-900">Email:</span>{" "}
+                <a
+                  href="mailto:ecwascholarsconference@gmail.com"
+                  class="text-[#06005A] underline-offset-4 hover:underline"
+                >
+                  ecwascholarsconference@gmail.com
+                </a>
+              </p>
+              <p>
+                <span class="font-medium text-slate-900">Website:</span>{" "}
+                <a
+                  href="https://www.ecwascholarsconference.org"
+                  class="text-[#06005A] underline-offset-4 hover:underline"
+                >
+                  www.ecwascholarsconference.org
+                </a>
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+  </div>
+  <Footer />
+</Layout>

@@ -1,0 +1,95 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import conf2024 from "../assets/esc-2024-recap.jpeg";
+import conf2026 from "../assets/2026-conference.jpeg";
+import journal2026 from "../assets/ESS-journal-2026.jpg";
+---
+
+<Layout title="Publications | ECWA Society for Scholars">
+  <Header />
+  <div class="plus-jakarta-sans-normal">
+    <div class="bg-[#faf5ee] py-5 lg:py-10">
+      <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div class="text-xs space-x-2">
+          <a href="/" class="text-[#06005A] hover:opacity-60">
+            Home
+          </a>
+          <span>/</span>
+          <span class="text-black">News & Events</span>
+        </div>
+        <h2 class="font-bold text-xl lg:text-3xl mt-2 libre-baskerville-bold">
+          ESS News & Events
+        </h2>
+      </div>
+    </div>
+    <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+      <div class="py-10 lg:py-20 grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-20 text-slate-600">
+        <div class="grid grid-cols-2 gap-3 lg:grid-cols-1 space-y-6 border shadow-lg border-slate-200 rounded-lg p-4">
+          <div>
+            <Image
+              src={journal2026}
+              alt="ESS Journal of Theology, Humanities, Arts and 
+                Sciences - Maiden Edition."
+              class="w-full"
+            />
+          </div>
+          <h2 class="leading-snug text-sm capitalize">
+            <a
+              href="/read/ess-journal-of-theology-humanities-arts-and-sciences-maiden-edition"
+              class="hover:underline"
+            >
+              ESS Journal of Theology, Humanities, Arts and Sciences - Maiden
+              Edition.
+            </a>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 lg:grid-cols-1 space-y-6 border shadow-lg border-slate-200 rounded-lg p-4">
+          <div>
+            <Image
+              src={conf2026}
+              alt="A collection of memorable moments and highlights from the 5th Annual Conference, held from 19–21 November 2026."
+              class="w-full"
+            />
+          </div>
+          <h2 class="leading-snug text-sm capitalize">
+            <a
+              href="/read/a-collection-of-memorable-moments-and-highlights-from-the-5th-annual-conference-held-from-19-21-november-2026"
+              class="hover:underline"
+            >
+              A collection of memorable moments and highlights from the 5th
+              Annual Conference, held from 19–21 November 2026.
+            </a>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 lg:grid-cols-1 space-y-6 border shadow-lg border-slate-200 rounded-lg p-4">
+          <div>
+            <Image
+              src={conf2024}
+              alt="Photo Highlights & Invicta 98.9 FM News Coverage of the 2024 ECWA Scholars Summit/Conference."
+              class="w-full"
+            />
+          </div>
+          <h2 class="leading-snug text-sm capitalize">
+            <a
+              href="/read/photo-highlights-and-invicta-98-9-fm-news-coverage-of-the-2024-ecwa-scholars-summit-conference"
+              class="hover:underline"
+            >
+              Photo Highlights & Invicta 98.9 FM News Coverage of the 2024 ECWA
+              Scholars Summit/Conference.
+            </a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="h-20"></div>
+
+      <!--  -->
+    </div>
+  </div>
+  <Footer />
+</Layout>

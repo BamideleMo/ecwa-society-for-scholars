@@ -1,0 +1,125 @@
+---
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import annualConf1 from "../../assets/conference5-01.jpeg";
+import annualConf2 from "../../assets/conference5-02.jpeg";
+import annualConf3 from "../../assets/conference5-03.jpeg";
+import annualConf4 from "../../assets/conference5-04.jpeg";
+import annualConf6 from "../../assets/conference5-06.jpeg";
+import annualConf7 from "../../assets/conference5-07.jpeg";
+import annualConf8 from "../../assets/conference5-08.jpeg";
+import annualConf9 from "../../assets/conference5-09.jpeg";
+import annualConf10 from "../../assets/conference5-10.jpeg";
+import annualConf11 from "../../assets/conference5-11.jpeg";
+import annualConf12 from "../../assets/conference5-12.jpeg";
+import annualConf14 from "../../assets/conference5-14.jpeg";
+import annualConf15 from "../../assets/conference5-15.jpeg";
+import annualConf16 from "../../assets/conference5-16.jpeg";
+import annualConf17 from "../../assets/conference5-17.jpeg";
+import annualConf18 from "../../assets/conference5-18.jpeg";
+import annualConf19 from "../../assets/conference5-19.jpeg";
+import annualConf20 from "../../assets/conference5-20.jpeg";
+import annualConf21 from "../../assets/conference5-21.jpeg";
+import annualConf22 from "../../assets/conference5-22.jpeg";
+import annualConf23 from "../../assets/conference5-23.jpeg";
+import annualConf24 from "../../assets/conference5-24.jpeg";
+import annualConf25 from "../../assets/conference5-25.jpeg";
+import annualConf26 from "../../assets/conference5-26.jpeg";
+import annualConf27 from "../../assets/conference5-27.jpeg";
+import annualConf28 from "../../assets/conference5-28.jpeg";
+import annualConf29 from "../../assets/conference5-29.jpeg";
+import annualConf33 from "../../assets/conference5-33.jpeg";
+import annualConf34 from "../../assets/conference5-34.jpeg";
+import annualConf39 from "../../assets/conference5-39.jpeg";
+import annualConf40 from "../../assets/conference5-40.jpeg";
+import annualConf41 from "../../assets/conference5-41.jpeg";
+import annualConf42 from "../../assets/conference5-42.jpeg";
+
+const conferenceImages = [
+  annualConf1,
+  annualConf2,
+  annualConf3,
+  annualConf4,
+  annualConf6,
+  annualConf7,
+  annualConf8,
+  annualConf9,
+  annualConf10,
+  annualConf11,
+  annualConf12,
+  annualConf14,
+  annualConf15,
+  annualConf16,
+  annualConf17,
+  annualConf18,
+  annualConf19,
+  annualConf20,
+  annualConf21,
+  annualConf22,
+  annualConf23,
+  annualConf24,
+  annualConf25,
+  annualConf26,
+  annualConf27,
+  annualConf28,
+  annualConf29,
+  annualConf33,
+  annualConf34,
+  annualConf39,
+  annualConf40,
+  annualConf41,
+  annualConf42,
+];
+---
+
+<Layout title="A collection of memorable moments and highlights from the 5th Annual Conference, held from 19–21 November 2026. | ECWA Society for Scholars">
+  <Header />
+  <div class="plus-jakarta-sans-normal">
+    <div class="bg-[#faf5ee] py-10">
+      <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div class="text-xs space-x-2">
+          <a href="/" class="text-[#06005A] hover:opacity-60">
+            Home
+          </a>
+          <span>/</span>
+          <a href="/news-and-events" class="text-[#06005A] hover:opacity-60">
+            News & Events
+          </a>
+          <span>/</span>
+          <span class="text-black">Read</span>
+        </div>
+        <h2 class="font-bold text-3xl mt-2 libre-baskerville-bold uppercase">
+          A collection of memorable moments and highlights from the 5th Annual
+          Conference, held from 19–21 November 2026.
+        </h2>
+      </div>
+    </div>
+
+    <section class="py-20">
+      <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div class="grid grid-cols-3 gap-20">
+          <div>
+            <div class="w-full bg-cyan-800 h-0.5"></div>
+          </div>
+          <div class="news col-span-2 space-y-6 text-base text-slate-600">
+            <p>Pictures from the 2024 ECWA Scholars Summit Conference:</p>
+            {conferenceImages.map((image, index) => (
+              <p>
+                <Image
+                  src={image}
+                  alt={`2024 Annual Conference of ECWA Society for Scholars — photo ${index + 1}`}
+                  class="w-full"
+                />
+              </p>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+  </div>
+  <Footer />
+</Layout>

@@ -1,0 +1,80 @@
+---
+const { textColor } = Astro.props;
+import { Image } from "astro:assets";
+import facebook from "../assets/facebook.svg";
+---
+
+<ul
+  class={`text-sm font-semibold lg:space-x-3 flex flex-col lg:flex-row lg:items-center drop-shadow-md ${textColor}`}
+>
+  <li class="border-b border-cyan-800 p-3 lg:border-0 lg:p-0">
+    <a href="/" class="hover:opacity-60">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-5 hidden lg:inline-block"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+        />
+      </svg>
+      <span class="lg:hidden">Home</span>
+    </a>
+  </li>
+  <li class="hidden lg:inline-block">
+    <b class="text-slate-300">.</b>
+  </li>
+  <li class="border-b border-cyan-800 p-3 lg:border-0 lg:p-0">
+    <a href="/about" class="hover:opacity-60">
+      About
+    </a>
+  </li>
+  <li class="hidden lg:inline-block">
+    <b class="text-slate-300">.</b>
+  </li>
+  <li class="border-b border-cyan-800 p-3 lg:border-0 lg:p-0">
+    <a href="/annual-conference" class="hover:opacity-60">
+      Annual Conference
+    </a>
+  </li>
+  <li class="hidden lg:inline-block">
+    <b class="text-slate-300">.</b>
+  </li>
+  <li class="border-b border-cyan-800 p-3 lg:border-0 lg:p-0">
+    <a href="/membership" class="hover:opacity-60">
+      Membership
+    </a>
+  </li>
+  <li class="hidden lg:inline-block">
+    <b class="text-slate-300">.</b>
+  </li>
+  <li class="border-b border-cyan-800 p-3 lg:border-0 lg:p-0">
+    <a href="/publications" class="hover:opacity-60">
+      Publications
+    </a>
+  </li>
+  <li class="hidden lg:inline-block">
+    <b class="text-slate-300">.</b>
+  </li>
+  <li class="border-b border-cyan-800 p-3 lg:border-0 lg:p-0">
+    <a href="/news-and-events" class="hover:opacity-60">
+      News & Events
+    </a>
+  </li>
+  <li class="border-b border-cyan-800 p-3 lg:hidden">
+    <a
+      href="https://www.facebook.com/profile.php?id=61596566111886"
+      class="hover:grayscale"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="ECWA Society for Scholars on Facebook"
+    >
+      <Image src={facebook} alt="" class="w-6" />
+    </a>
+  </li>
+</ul>

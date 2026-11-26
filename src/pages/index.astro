@@ -1,0 +1,251 @@
+---
+import Layout from "../layouts/Layout.astro";
+import banner from "../assets/ECWA-Society-for-Scholars-banner.png";
+import conf2024 from "../assets/esc-2024-recap.jpeg";
+import conf2026 from "../assets/2026-conference.jpeg";
+import journal2026 from "../assets/ESS-journal-2026.jpg";
+import Header from "../components/Header.astro";
+import { Image } from "astro:assets";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="ECWA Society for Scholars">
+  <Header />
+  <div class="relative isolate overflow-hidden bg-[#06005A]">
+    <div
+      aria-hidden="true"
+      class="pointer-events-none absolute inset-0 opacity-20"
+      style="background-image:
+              repeating-linear-gradient(45deg, transparent 0 25px, rgba(255, 255, 255, 0.288) 25px 26px),
+              repeating-linear-gradient(-45deg, transparent 0 38px, rgba(255,255,255,.288) 38px 39px);"
+    ></div>
+    <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row items-center space-x-12">
+        <div class="lg:flex-1 pt-10 lg:pt-0 text-white lg:pr-10">
+          <div class="w-fit p-2 border border-dotted uppercase text-xs [word-spacing:4px] text-cyan-100">
+            ECWA Society for Scholars (ESS)
+          </div>
+          <h1 class="mt-4 text-2xl lg:text-4xl font-bold leading-tight">
+            Where Faith Meets Scholarship.
+          </h1>
+          <h2 class="my-6">
+            Bringing ECWA scholars together to promote truth, foster
+            collaboration and advance research for the growth of the Church and
+            the transformation of society.
+          </h2>
+          <div>
+            <a
+              href="/about"
+              class="group inline-flex items-center gap-2
+          bg-cyan-800 hover:bg-cyan-600
+          text-white text-sm font-semibold
+          px-5 py-3 rounded-lg
+          shadow-md hover:shadow-xl
+          hover:-translate-y-1 hover:scale-[1.03]
+          active:scale-95
+          transition-all duration-500
+          ease-[cubic-bezier(0.22,1,0.36,1)]
+          focus-visible:outline-none
+          focus-visible:ring-4 focus-visible:ring-cyan-300"
+            >
+              <span>Learn more</span>
+
+              <svg
+                class="w-4 h-4 transition-transform duration-500
+              group-hover:translate-x-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 12h14m-7-7 7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="lg:flex-1">
+          <Image src={banner} alt="ECWA Society for Scholars." class="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-50 plus-jakarta-sans-normal py-10 lg:py-20">
+    <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+      <h1 class="text-2xl lg:text-4xl font-bold leading-tight text-center">
+        Our Objectives
+      </h1>
+      <div class="mt-3 w-fit flex mx-auto space-x-0.5">
+        <div class="w-6 h-1 rounded-full bg-[#06005A]"></div>
+        <div class="w-4 h-1 rounded-full bg-[#06005A]"></div>
+        <div class="w-1 h-1 rounded-full bg-[#06005A]"></div>
+        <div class="w-4 h-1 rounded-full bg-[#06005A]"></div>
+      </div>
+      <h2 class="lg:w-3/6 mx-auto text-center text-base mt-3 leading-snug text-black">
+        Building fellowship, strengthening partnerships and advancing the
+        collective impact of ECWA scholars.
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 my-10 lg:my-20 text-lg leading-8 text-slate-600">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl font-medium text-cyan-600">01.</span>
+            <div class="h-px flex-1 bg-slate-200"></div>
+          </div>
+          <p class="">
+            Promote unity, encourage and support{" "}
+            <span class="text-[#06005A]">ECWA Society for Scholars</span> in
+            their fields of specialization.
+          </p>
+        </div>
+
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl font-medium text-cyan-600">02.</span>
+            <div class="h-px flex-1 bg-slate-200"></div>
+          </div>
+          <p class="">
+            Encourage fellow scholars to see themselves as{" "}
+            <span class="text-[#06005A]">partners with ECWA</span>.
+          </p>
+        </div>
+
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl font-medium text-cyan-600">03.</span>
+            <div class="h-px flex-1 bg-slate-200"></div>
+          </div>
+          <p class="">
+            Encourage members to{" "}
+            <span class="text-[#06005A]">support our communities</span>,
+            recognize and appreciate the activities of ECWA.
+          </p>
+        </div>
+
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl font-medium text-cyan-600">04.</span>
+            <div class="h-px flex-1 bg-slate-200"></div>
+          </div>
+          <p class="">
+            Establish and promote national and international contact among{" "}
+            <span class="text-[#06005A]">ECWA members</span> and affiliate
+            organizations having similar aims and objectives.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="plus-jakarta-sans-normal bg-[#faf5ee]">
+    <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+      <div class="py-10 lg:py-20 grid grid-cols-3 text-xl text-slate-900">
+        <div class="pr-4 space-y-3">
+          <div class="libre-baskerville-bold text-3xl lg:text-5xl">100+</div>
+          <div class="text-xs lg:text-lg font-bold tracking-wider text-[#06005A]">
+            Members
+          </div>
+        </div>
+        <div class="border-x space-y-3 border-slate-600 px-4">
+          <div class="libre-baskerville-bold text-3xl lg:text-5xl">4+</div>
+          <div class="text-xs lg:text-lg font-bold tracking-wider text-[#06005A]">
+            Conferences
+          </div>
+        </div>
+        <div class="pl-4 space-y-3">
+          <div class="libre-baskerville-bold text-3xl lg:text-5xl">20+</div>
+          <div class="text-xs lg:text-lg font-bold tracking-wider text-[#06005A]">
+            Institutions Represented
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="plus-jakarta-sans-normal py-20">
+    <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+      <div class="space-y-2 mb-5">
+        <div class="flex justify-between">
+          <h2 class="text-2xl lg:text-4xl font-bold">News & Events</h2>
+          <div class="pt-2">
+            <a
+              href="/news-and-events"
+              class="bg-cyan-800 text-white p-2 rounded text-xs hover:opacity-60"
+            >
+              More News
+            </a>
+          </div>
+        </div>
+        <div class="flex space-x-3">
+          <div class="w-3 h-1 bg-[#06005A] rounded-full"></div>
+          <div class="w-10 h-1 bg-[#06005A] rounded-full"></div>
+          <div class="grow h-1 bg-[#06005A] rounded-full"></div>
+          <div class="w-3 h-1 bg-[#06005A] rounded-full"></div>
+          <div class="w-24 h-1 bg-[#06005A] rounded-full"></div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-20 text-slate-600">
+        <div class="grid grid-cols-2 gap-3 lg:grid-cols-1 space-y-6 border shadow-lg border-slate-200 rounded-lg p-4">
+          <div>
+            <Image
+              src={journal2026}
+              alt="ESS Journal of Theology, Humanities, Arts and 
+                Sciences - Maiden Edition."
+              class="w-full"
+            />
+          </div>
+          <h2 class="leading-snug text-sm capitalize">
+            <a
+              href="/read/ess-journal-of-theology-humanities-arts-and-sciences-maiden-edition"
+              class="hover:underline"
+            >
+              ESS Journal of Theology, Humanities, Arts and Sciences - Maiden
+              Edition.
+            </a>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 lg:grid-cols-1 space-y-6 border shadow-lg border-slate-200 rounded-lg p-4">
+          <div>
+            <Image
+              src={conf2026}
+              alt="A collection of memorable moments and highlights from the 5th Annual Conference, held from 19–21 November 2026."
+              class="w-full"
+            />
+          </div>
+          <h2 class="leading-snug text-sm capitalize">
+            <a
+              href="/read/a-collection-of-memorable-moments-and-highlights-from-the-5th-annual-conference-held-from-19-21-november-2026"
+              class="hover:underline"
+            >
+              A collection of memorable moments and highlights from the 5th
+              Annual Conference, held from 19–21 November 2026.
+            </a>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 lg:grid-cols-1 space-y-6 border shadow-lg border-slate-200 rounded-lg p-4">
+          <div>
+            <Image
+              src={conf2024}
+              alt="Photo Highlights & Invicta 98.9 FM News Coverage of the 2024 ECWA Scholars Summit/Conference."
+              class="w-full"
+            />
+          </div>
+          <h2 class="leading-snug text-sm capitalize">
+            <a
+              href="/read/photo-highlights-and-invicta-98-9-fm-news-coverage-of-the-2024-ecwa-scholars-summit-conference"
+              class="hover:underline"
+            >
+              Photo Highlights & Invicta 98.9 FM News Coverage of the 2024 ECWA
+              Scholars Summit/Conference.
+            </a>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <Footer />
+</Layout>

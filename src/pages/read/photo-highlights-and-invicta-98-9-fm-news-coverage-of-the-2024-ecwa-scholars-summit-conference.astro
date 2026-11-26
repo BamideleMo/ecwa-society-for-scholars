@@ -1,0 +1,128 @@
+---
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import annualConf1 from "../../assets/conference4-01.jpeg";
+import annualConf2 from "../../assets/conference4-02.jpeg";
+import annualConf3 from "../../assets/conference4-03.jpeg";
+import annualConf4 from "../../assets/conference4-04.jpeg";
+import annualConf5 from "../../assets/conference4-05.jpeg";
+import annualConf6 from "../../assets/conference4-06.jpeg";
+import annualConf7 from "../../assets/conference4-07.jpeg";
+import annualConf8 from "../../assets/conference4-08.jpeg";
+import annualConf9 from "../../assets/conference4-09.jpeg";
+import annualConf10 from "../../assets/conference4-10.jpeg";
+import annualConf11 from "../../assets/conference4-11.jpeg";
+import annualConf12 from "../../assets/conference4-12.jpeg";
+import annualConf13 from "../../assets/conference4-13.jpeg";
+import annualConf14 from "../../assets/conference4-14.jpeg";
+import annualConf15 from "../../assets/conference4-15.jpeg";
+import annualConf16 from "../../assets/conference4-16.jpeg";
+import annualConf17 from "../../assets/conference4-17.jpeg";
+import annualConf18 from "../../assets/conference4-18.jpeg";
+import annualConf19 from "../../assets/conference4-19.jpeg";
+import annualConf20 from "../../assets/conference4-20.jpeg";
+import annualConf21 from "../../assets/conference4-21.jpeg";
+import annualConf22 from "../../assets/conference4-22.jpeg";
+import annualConf23 from "../../assets/conference4-23.jpeg";
+import annualConf24 from "../../assets/conference4-24.jpeg";
+import annualConf25 from "../../assets/conference4-25.jpeg";
+import annualConf26 from "../../assets/conference4-26.jpeg";
+import annualConf27 from "../../assets/conference4-27.jpeg";
+import annualConf28 from "../../assets/conference4-28.jpeg";
+import annualConf29 from "../../assets/conference4-29.jpeg";
+
+const conferenceImages = [
+  annualConf1,
+  annualConf2,
+  annualConf3,
+  annualConf4,
+  annualConf5,
+  annualConf6,
+  annualConf7,
+  annualConf8,
+  annualConf9,
+  annualConf10,
+  annualConf11,
+  annualConf12,
+  annualConf13,
+  annualConf14,
+  annualConf15,
+  annualConf16,
+  annualConf17,
+  annualConf18,
+  annualConf19,
+  annualConf20,
+  annualConf21,
+  annualConf22,
+  annualConf23,
+  annualConf24,
+  annualConf25,
+  annualConf26,
+  annualConf27,
+  annualConf28,
+  annualConf29,
+];
+---
+
+<Layout title="Photo Highlights & Invicta 98.9 FM News Coverage of the 2024 ECWA Scholars Summit/Conference. | ECWA Society for Scholars">
+  <Header />
+  <div class="plus-jakarta-sans-normal">
+    <div class="bg-[#faf5ee] py-10">
+      <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div class="text-xs space-x-2">
+          <a href="/" class="text-[#06005A] hover:opacity-60">
+            Home
+          </a>
+          <span>/</span>
+          <a href="/news-and-events" class="text-[#06005A] hover:opacity-60">
+            News & Events
+          </a>
+          <span>/</span>
+          <span class="text-black">Read</span>
+        </div>
+        <h2 class="font-bold text-3xl mt-2 libre-baskerville-bold uppercase">
+          Photo Highlights & Invicta 98.9 FM News Coverage of the 2024 ECWA
+          Scholars Summit/Conference.
+        </h2>
+      </div>
+    </div>
+
+    <section class="py-20">
+      <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div class="grid grid-cols-3 gap-20">
+          <div>
+            <div class="w-full bg-cyan-800 h-0.5"></div>
+          </div>
+          <div class="news col-span-2 space-y-6 text-base text-slate-600">
+            <p>News recap of ECWA Scholars Summit Conference 2024 on radio:</p>
+            <p>
+              <audio controls="" class="w-full">
+                <source src="horse.ogg" type="audio/ogg" />
+                <source
+                  type="audio/mpeg"
+                  src="/audio/invicta-fm-on-ECWA-scholars-conference-2024.mp3"
+                />
+                Your browser does not support the audio element.
+              </audio>
+            </p>
+            <p>Pictures from the 2024 ECWA Scholars Summit Conference:</p>
+            {conferenceImages.map((image, index) => (
+              <p>
+                <Image
+                  src={image}
+                  alt={`2024 Annual Conference of ECWA Society for Scholars — photo ${index + 1}`}
+                  class="w-full"
+                />
+              </p>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+  </div>
+  <Footer />
+</Layout>

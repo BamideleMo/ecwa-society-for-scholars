@@ -1,0 +1,400 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import annualConf2 from "../assets/image-2.jpeg";
+import annualConf3 from "../assets/image-3.jpeg";
+import annualConf4 from "../assets/image-4.jpeg";
+import annualConf5 from "../assets/image-5.jpeg";
+import annualConf6 from "../assets/image-6.jpeg";
+import annualConf7 from "../assets/image-7.jpeg";
+---
+
+<Layout title="Annual Conference | ECWA Society for Scholars">
+  <Header />
+  <div class="plus-jakarta-sans-normal">
+    <div class="bg-[#faf5ee] py-5 lg:py-10">
+      <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div class="text-xs space-x-2">
+          <a href="/" class="text-[#06005A] hover:opacity-60">
+            Home
+          </a>
+          <span>/</span>
+          <span class="text-black">Annual Conference</span>
+        </div>
+        <h2 class="font-bold text-xl lg:text-3xl mt-2 libre-baskerville-bold">
+          ESS Annual Conference
+        </h2>
+      </div>
+    </div>
+
+    <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+      <div class="text-sm py-10 lg:py-20 text-slate-600">
+        <div class="w-8/12 text-base lg:text-lg">
+          A major gathering of scholars, researchers, academics, church leaders,
+          and professionals within the ECWA community.
+        </div>
+
+        <div class="py-10 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
+          <div class="text-base leading-relaxed space-y-5 pt-5">
+            <div>
+              The Annual Conference is a major gathering of scholars,
+              researchers, academics, church leaders, and professionals within
+              the ECWA community. It provides a platform for rigorous
+              intellectual exchange, research presentation, fellowship, and
+              collaborative reflection on issues affecting the Church and
+              society.
+            </div>
+            <div>
+              The Conference reflects ESS’s commitment to serving as a think
+              tank for ECWA. Participants examine critical social, intellectual,
+              spiritual, ethical, political, economic, and moral issues facing
+              the Church and the nation.
+            </div>
+          </div>
+          <div
+            class="grid w-full grid-cols-2 gap-3 md:grid-cols-4 md:gap-4
+                    auto-rows-22.5 sm:auto-rows-27.5 md:auto-rows-30 xl:auto-rows-35"
+          >
+            <!-- Hero: group photo in front of the conference banner -->
+            <div class="group col-span-2 row-span-3 overflow-hidden rounded-xl bg-slate-200 shadow-md ring-1 ring-black/5 md:row-span-2">
+              <Image
+                src={annualConf6}
+                alt="Participants posing in front of the 5th Annual Conference banner"
+                class="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+              />
+            </div>
+
+            <!-- Woman speaking at the podium -->
+            <div class="group row-span-2 overflow-hidden rounded-xl bg-slate-200 shadow-md ring-1 ring-black/5">
+              <Image
+                src={annualConf4}
+                alt="A woman speaking at the podium"
+                class="h-full w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+              />
+            </div>
+
+            <!-- Man at the podium on stage -->
+            <div class="group row-span-2 overflow-hidden rounded-xl bg-slate-200 shadow-md ring-1 ring-black/5">
+              <Image
+                src={annualConf2}
+                alt="A man standing at the podium on stage"
+                class="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section
+      class="bg-[#042F3A] px-6 py-10 lg:py-20 text-base leading-relaxed text-white"
+      style="background-image:
+      repeating-linear-gradient(0deg, transparent 0 1px, rgba(0,20,28,0.25) 1px 2px),
+      repeating-linear-gradient(90deg, transparent 0 1px, rgba(0,20,28,0.25) 1px 2px),
+      radial-gradient(at 20% 20%, rgba(6,182,212,0.35) 0, transparent 50%),
+      radial-gradient(at 80% 15%, rgba(34,211,238,0.25) 0, transparent 45%),
+      radial-gradient(at 70% 85%, rgba(8,145,178,0.3) 0, transparent 50%),
+      radial-gradient(at 10% 90%, rgba(103,232,249,0.2) 0, transparent 45%);"
+    >
+      <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div class="mb-10 flex flex-col gap-4 border-b border-white pb-6 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-lg font-bold tracking-wider text-cyan-300">
+              What to expect
+            </p>
+            <h2 class="mt-3 text-xl lg:text-3xl font-semibold tracking-tight sm:text-4xl">
+              Conference activities
+            </h2>
+          </div>
+          <p class="text-sm leading-6 text-slate-400">
+            A program of learning, collaboration, and reflection.
+          </p>
+        </div>
+
+        <ol class="grid gap-x-12 sm:grid-cols-2">
+          <li class="flex gap-5 border-b border-white py-6">
+            <span class="font-mono text-sm text-cyan-300">01.</span>
+            <div class="-mt-1">
+              <h3 class="text-lg font-medium">
+                Keynote addresses and plenary sessions
+              </h3>
+              <p class="mt-2 text-slate-400">
+                Foundational perspectives from leading thinkers in theology,
+                society, and scholarship.
+              </p>
+            </div>
+          </li>
+
+          <li class="flex gap-5 border-b border-white py-6">
+            <span class="font-mono text-sm text-cyan-300">02.</span>
+            <div class="-mt-1">
+              <h3 class="text-lg font-medium">Research paper presentations</h3>
+              <p class="mt-2 text-slate-400">
+                Peer-reviewed presentations advancing knowledge and new
+                perspectives.
+              </p>
+            </div>
+          </li>
+
+          <li class="flex gap-5 border-b border-white py-6">
+            <span class="font-mono text-sm text-cyan-300">03.</span>
+            <div class="-mt-1">
+              <h3 class="text-lg font-medium">
+                Panel discussions and seminars
+              </h3>
+              <p class="mt-2 text-slate-400">
+                Focused dialogue on pressing ecclesial and societal questions.
+              </p>
+            </div>
+          </li>
+
+          <li class="flex gap-5 border-b border-white py-6">
+            <span class="font-mono text-sm text-cyan-300">04.</span>
+            <div class="-mt-1">
+              <h3 class="text-lg font-medium">
+                Workshops and capacity-building sessions
+              </h3>
+              <p class="mt-2 text-slate-400">
+                Practical skill-building for research, pedagogy, and
+                publication.
+              </p>
+            </div>
+          </li>
+
+          <li class="flex gap-5 border-b border-white py-6">
+            <span class="font-mono text-sm text-cyan-300">05.</span>
+            <div class="-mt-1">
+              <h3 class="text-lg font-medium">
+                Networking and collaboration opportunities
+              </h3>
+              <p class="mt-2 text-slate-400">
+                Interdisciplinary spaces to initiate joint projects and
+                partnerships.
+              </p>
+            </div>
+          </li>
+
+          <li class="flex gap-5 border-b border-white py-6">
+            <span class="font-mono text-sm text-cyan-300">06.</span>
+            <div class="-mt-1">
+              <h3 class="text-lg font-medium">
+                Fellowship, prayer, and spiritual reflection
+              </h3>
+              <p class="mt-2 text-slate-400">
+                Grounding the academic vocation in shared worship and community.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div class="border-t border-slate-100 py-10 lg:py-20 text-base leading-relaxed">
+          <div>
+            <h2 class="mt-3 text-xl lg:text-3xl font-semibold tracking-tight sm:text-4xl">
+              Purpose
+            </h2>
+            <p class="text-base lg:text-lg font-bold tracking-wider text-[#06005A]">
+              Why this annual conference?
+            </p>
+          </div>
+
+          <ol class="grid sm:grid-cols-2">
+            <li class="flex gap-4 border-b border-gray-200 py-5 sm:pr-8">
+              <span class="text-xs text-cyan-600 font-bold">01.</span>
+              <p class="-mt-1">
+                Promote unity, friendship, and collaboration among ECWA
+                scholars.
+              </p>
+            </li>
+
+            <li class="flex gap-4 border-b border-gray-200 py-5 sm:border-l sm:pl-8">
+              <span class="text-xs text-cyan-600 font-bold">02.</span>
+              <p class="-mt-1">
+                Encourage scholarly research that produces practical and useful
+                outcomes.
+              </p>
+            </li>
+
+            <li class="flex gap-4 border-b border-gray-200 py-5 sm:pr-8">
+              <span class="text-xs text-cyan-600 font-bold">03.</span>
+              <p class="-mt-1">
+                Provide a forum for academics from universities, seminaries,
+                colleges of education, and polytechnics to share knowledge.
+              </p>
+            </li>
+
+            <li class="flex gap-4 border-b border-gray-200 py-5 sm:border-l sm:pl-8">
+              <span class="text-xs text-cyan-600 font-bold">04.</span>
+              <p class="-mt-1">
+                Address contemporary challenges confronting ECWA, the Christian
+                community, and society.
+              </p>
+            </li>
+
+            <li class="flex gap-4 py-5 sm:pr-8">
+              <span class="text-xs text-cyan-600 font-bold">05.</span>
+              <p class="-mt-1">
+                Strengthen the contribution of scholars to the mission and
+                development of ECWA.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-stone-50 py-16">
+      <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+          <div class="border-l-2 border-cyan-600 pl-6">
+            <p class="text-base lg:text-lg font-bold tracking-wider text-[#06005A]">
+              The conference
+            </p>
+
+            <h2 class="mt-4 max-w-sm text-2xl lg:text-4xl font-medium leading-tight tracking-tight text-stone-900 sm:text-5xl">
+              A place for <span class="font-serif italic">ideas</span> to meet.
+            </h2>
+
+            <p class="mt-5 max-w-sm text-sm leading-6 text-stone-600">
+              Open to the wider ECWA academic community and everyone interested
+              in faith, learning, research, and national development.
+            </p>
+          </div>
+
+          <div>
+            <div class="mb-3 flex items-center justify-between border-b border-stone-300 pb-3">
+              <h2 class="text-lg font-bold tracking-wider text-[#06005A]">
+                Who Should Attend
+              </h2>
+              <span class="text-xs text-stone-400">01. — 08.</span>
+            </div>
+
+            <ul class="grid sm:grid-cols-2">
+              <li class="flex items-center gap-4 border-b border-stone-200 py-4">
+                <span class="font-serif text-sm italic text-cyan-700">01.</span>
+                <span class="text-sm text-stone-800">ECWA scholars</span>
+              </li>
+              <li class="flex items-center gap-4 border-b border-stone-200 py-4 sm:pl-6">
+                <span class="font-serif text-sm italic text-cyan-700">02.</span>
+                <span class="text-sm text-stone-800">Researchers</span>
+              </li>
+              <li class="flex items-center gap-4 border-b border-stone-200 py-4">
+                <span class="font-serif text-sm italic text-cyan-700">03.</span>
+                <span class="text-sm text-stone-800">Lecturers</span>
+              </li>
+              <li class="flex items-center gap-4 border-b border-stone-200 py-4 sm:pl-6">
+                <span class="font-serif text-sm italic text-cyan-700">04.</span>
+                <span class="text-sm text-stone-800">Theologians</span>
+              </li>
+              <li class="flex items-center gap-4 border-b border-stone-200 py-4">
+                <span class="font-serif text-sm italic text-cyan-700">05.</span>
+                <span class="text-sm text-stone-800">Professionals</span>
+              </li>
+              <li class="flex items-center gap-4 border-b border-stone-200 py-4 sm:pl-6">
+                <span class="font-serif text-sm italic text-cyan-700">06.</span>
+                <span class="text-sm text-stone-800">
+                  Postgraduate students
+                </span>
+              </li>
+              <li class="flex items-center gap-4 border-b border-stone-200 py-4">
+                <span class="font-serif text-sm italic text-cyan-700">07.</span>
+                <span class="text-sm text-stone-800">Church leaders</span>
+              </li>
+              <li class="flex items-center gap-4 border-b border-stone-200 py-4 sm:pl-6">
+                <span class="font-serif text-sm italic text-cyan-700">08.</span>
+                <span class="text-sm text-stone-800">
+                  Faith and development enthusiasts
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10 lg:py-20">
+      <div class="w-full max-w-full px-4 sm:px-6 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
+          <div
+            class="grid w-full grid-cols-2 gap-3 md:grid-cols-4 md:gap-4
+                    auto-rows-22.5 sm:auto-rows-27.5 md:auto-rows-30 xl:auto-rows-35"
+          >
+            <!-- Woman speaking at the podium -->
+            <div class="group row-span-2 overflow-hidden rounded-xl bg-slate-200 shadow-md ring-1 ring-black/5">
+              <Image
+                src={annualConf7}
+                alt="A woman speaking at the podium"
+                class="h-full w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+              />
+            </div>
+
+            <!-- Man at the podium on stage -->
+            <div class="group row-span-2 overflow-hidden rounded-xl bg-slate-200 shadow-md ring-1 ring-black/5">
+              <Image
+                src={annualConf5}
+                alt="A man standing at the podium on stage"
+                class="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+              />
+            </div>
+
+            <!-- Hero: group photo in front of the conference banner -->
+            <div class="group col-span-2 row-span-3 overflow-hidden rounded-xl bg-slate-200 shadow-md ring-1 ring-black/5 md:row-span-2">
+              <Image
+                src={annualConf3}
+                alt="Participants posing in front of the 5th Annual Conference banner"
+                class="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+              />
+            </div>
+          </div>
+
+          <section class="pb-10 lg:pb-20 plus-jakarta-sans-normal">
+            <div class="relative isolate overflow-hidden rounded-lg border border-white/15 bg-[#06005A] p-5">
+              <!-- Subtle crosshatch -->
+              <div
+                aria-hidden="true"
+                class="pointer-events-none absolute inset-0 opacity-20"
+                style="background-image:
+              repeating-linear-gradient(45deg, transparent 0 25px, rgba(255,255,255,.288) 25px 26px),
+              repeating-linear-gradient(-45deg, transparent 0 38px, rgba(255,255,255,.288) 38px 39px);"
+              ></div>
+              <div>
+                <h2 class="text-base lg:text-lg font-bold tracking-wider text-white">
+                  Participation
+                </h2>
+
+                <h1 class="mt-0 text-xl lg:text-3xl font-semibold tracking-tight sm:text-4xl text-cyan-200">
+                  Join the next Conference
+                </h1>
+
+                <p class="mt-4 max-w-xl text-sm leading-6 text-white">
+                  ESS invites all distinguished scholars and emerging
+                  researchers to participate in its Annual Conference.
+                  Participation offers an opportunity to contribute knowledge,
+                  build partnerships, and help advance truth, unity, and
+                  Christian scholarship within ECWA and beyond.
+                </p>
+                <div class="mt-4 lg:mt-10 flex flex-wrap gap-3">
+                  <a
+                    href="http://wa.me/2348066259948"
+                    target="_blank"
+                    class="rounded px-5 py-2.5 text-xs font-medium text-white transition bg-cyan-950 hover:opacity-60"
+                  >
+                    Register Interest <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+  </div>
+  <Footer />
+</Layout>
