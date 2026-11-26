@@ -23,6 +23,7 @@
 
 .news {
   padding: 0 30px;
+  background-color: red;
 }
 .news img {
   border-radius: 10px;
